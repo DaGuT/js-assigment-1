@@ -4,6 +4,9 @@ and draws some geometrical shapes. The program is launched by viewing “index.h
 recent standards-compliant web browser.
 
 Project is written using vanilla js
+
+Demo: [dagut.ru](https://demos.dagut.ru/fancy-parallelogram/)
+
 # Basic flow
 The user selects three arbitrary points within the client area of the browser. As they are
 selected, the program highlights their location by drawing red circles, 11 pixels in diameter,
