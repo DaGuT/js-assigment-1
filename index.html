@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-app"></div>
+        <div class="right-menu">
+            <div class="text-center">
+                <a class="button" onclick="resetApp()">Reset!</a>
+            </div>
+            <div class="coords">
+                <ul>
+                    <li class="coord"><span class="point-name">Circle1: </span><span class="point-coord"></span></li>
+                    <li class="coord"><span class="point-name">Circle2: </span><span class="point-coord"></span></li>
+                    <li class="coord"><span class="point-name">Circle3: </span><span class="point-coord"></span></li>
+                </ul>
+            </div>
+            <div class="squares">
+                <ul>
+                    <li><span class="point-name">Parallelogram: </span><span id="figure1"></span></li>
+                    <li><span class="point-name">Circle: </span><span id="figure2"></span></li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <a class="button" onclick="toggleHelp()">About</a>
+            </div>
+            <div class="help hidden">
+                <div class="creds">Developed by <a href="//dagut.ru">Alexander (DaGuT) Mongolin</a>©</div>
+                <div class="how-to">
+                    <p>This is very best of the best in all the best of the worlds application!</p>
+
+                    <p>You can build parallelogram and circle by only placing 3 points on the left part of the screen! Center of the circle is based on center of mass of parallelogram</p>
+
+                    <p><ol>
+                        <li>Click at any place of the left part</li>
+                        <li>Place two more points</li>
+                        <li>Check information on the right side</li>
+                    </ol></p>
+                    <p>You can also move points around by drag-n-drop</p>
+                    <p>Press "Reset" to remove all points and figures</p>
+                    <p>Even though we can build plenty of parallelograms based on 3 points, We only stick with one</p>
+                    <p>Square of parallelogram is calculated based on Geron's formula for trinagles using three known points (as double of that square)</p>
+                    <p>Yellow circle's radious is calculated so its suqare is the same as of parallelogram</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./src/js/vector.js"></script>
+<script src="./src/js/canvas.js"></script>
+<script src="./src/js/circle.js"></script>
+<script src="./src/js/parallelogram.js"></script>
+<script src="./src/js/main.js"></script>
+
+</html>

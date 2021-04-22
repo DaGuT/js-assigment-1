@@ -1,0 +1,64 @@
+body {
+    background:#212121;
+    color:white;
+}
+
+.right-menu {
+    position: absolute;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    width:20%;
+    background:#202020;
+    padding-top:30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main-app {
+    position: absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    height:100%;
+}
+
+.hidden {
+    display: none;
+}
+
+a.button {
+    display: inline-block;
+
+    font: normal normal 300 1.3em 'Open Sans';
+    text-decoration: none;
+
+    color: rgba(28, 190, 131, 1);
+    brackground-color: transparent;
+    border: 1px solid rgba(28, 190, 131, 1);
+    border-radius: 100px;
+
+    padding: .3em 1.2em;
+    margin: 5px;
+
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, transparent 50%, rgba(28, 190, 131, 1) 50%);
+    transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+}
+
+a.button:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(28, 190, 131, 1);
+    background-position: -100% 100%;
+}
+
+.help {
+    padding: 20px;
+}
+
+.help a, .help a:visited {
+    color:white;
+}
